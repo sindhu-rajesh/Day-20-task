@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Lugrasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lilita+One&family=Lobster&family=Lugrasimo&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lilita+One&family=Lobster&family=Lugrasimo&family=Varela+Round&display=swap');
+body{
+background-image:url(Dog.png) ;
+}
+
+.navhead {
+  display: flex;
+  background-color: RGB(90, 195, 176);
+  padding: 1rem 0 1rem 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+}
+nav i {
+  padding: 0 0.5rem 0 0.5rem;
+}
+.cardsspace {
+  transition: 1s;
+}
+.cardsspace:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+.button {
+  background-color: rgb(175, 241, 21) !important;
+  color: rgb(94, 75, 116) !important;
+  font-weight: bold !important;
+  transition: 1s;
+}
+.button:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+.card-header {
+  font-family: "Lobster", sans-serif;
+  color: rgb(216, 47, 13) !important;
+}
+.card-title{
+    font-family: "Lilita One", sans-serif;
+    color: rgb(39, 49, 47) !important;
+}
+.fact{
+    font-family: "Varela Round", sans-serif;
+    font-weight:800 !important;
+    color: rgb(29, 14, 161) !important;
+}
+@media screen and (max-width: 768px) {
+    .button {
+        transition: 0;
+      }
+    .button:hover {
+        transform: scale(0);
+        z-index: 0;
+      }
+      .cardsspace{
+        margin-top: 2rem;
+      }
+      .button {
+        transition: 0;
+      }
+      .button:hover {
+        transform: scale(1.1);
+        z-index: 2;
+      }
+}
